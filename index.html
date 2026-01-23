@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foleja e Shqiponjave | Kuzhinë Lokale në Kodra</title>
+  <meta name="description" content="Përjetoni kuzhinën e jashtëzakonshme me produkte lokale të vendosura në kodrat paqësore. Foleja e Shqiponjave ofron gatim me përbërës vendas në një ambient intim, të frymëzuar nga natyra.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">Foleja e Shqiponjave</a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link active" data-sq="Ballina" data-mk="Почетна" data-en="Home">Ballina</a></li>
+        <li><a href="menu.html" class="nav-link" data-sq="Menyja" data-mk="Мени" data-en="Menu">Menyja</a></li>
+        <li><a href="#about" class="nav-link" data-sq="Rreth Nesh" data-mk="За Нас" data-en="About">Rreth Nesh</a></li>
+        <li><a href="#gallery" class="nav-link" data-sq="Galeria" data-mk="Галерија" data-en="Gallery">Galeria</a></li>
+        <li><a href="#contact" class="nav-link" data-sq="Kontakti" data-mk="Контакт" data-en="Contact">Kontakti</a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="language-switcher">
+          <button class="lang-btn active" data-lang="sq">SQ</button>
+          <button class="lang-btn" data-lang="mk">MK</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+        <a href="#reservations" class="nav-cta" data-sq="Rezervo Tavolinë" data-mk="Резервирај Маса" data-en="Book a Table">Rezervo Tavolinë</a>
+      </div>
+      <div class="nav-toggle" id="navToggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="https://i.imgur.com/sT90k4e.mp4" alt="Pamje mahnitëse e kodrave në perëndim dielli" class="hero-image">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-subtitle" data-sq="E Vendosur në Kodra" data-mk="Сместено во Ридовите" data-en="Nestled in the Hills">E Vendosur në Kodra</p>
+      <h1 class="hero-title" data-sq="Ku Natyra Takon Shijen" data-mk="Каде Природата се Среќава со Вкусот" data-en="Where Nature Meets Flavor">Ku Natyra Takon Shijen</h1>
+      <p class="hero-description" data-sq="Përjetoni harmoninë perfekte të përbërësve të buruar lokalisht dhe pamjeve mahnitëse të kodrave. Çdo pjatë tregon historinë e tokës sonë." data-mk="Доживејте совршена хармонија на локално набавени состојки и зачудувачки погледи на ридовите. Секое јадење ја раскажува приказната на нашата земја." data-en="Experience the perfect harmony of locally-sourced ingredients and breathtaking hillside views. Every dish tells the story of our land.">
+        Përjetoni harmoninë perfekte të përbërësve të buruar lokalisht dhe pamjeve mahnitëse të kodrave. 
+        Çdo pjatë tregon historinë e tokës sonë.
+      </p>
+      <div class="hero-buttons">
+        <a href="menu.html" class="btn btn-primary" data-sq="Eksploroni Menynë" data-mk="Истражи го Менито" data-en="Explore Our Menu">Eksploroni Menynë</a>
+        <a href="#reservations" class="btn btn-outline" data-sq="Rezervoni Tavolinën" data-mk="Резервирајте Маса" data-en="Reserve Your Table">Rezervoni Tavolinën</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section about" id="about">
+    <div class="about-grid">
+      <div class="about-image-wrapper">
+        <img src="https://i.imgur.com/KhkuY3x.jpeg" alt="Brenda restorantit me ndriçim të ngrohtë" class="about-image">
+        <div class="about-image-accent"></div>
+      </div>
+      <div class="about-content">
+        <p class="about-label" data-sq="Historia Jonë" data-mk="Нашата Приказна" data-en="Our Story">Historia Jonë</p>
+        <h2 class="about-title" data-sq="Një Strehë Shijesh në Kodra" data-mk="Прибежиште на Вкусови во Ридовите" data-en="A Sanctuary of Flavor in the Hills">Një Strehë Shijesh në Kodra</h2>
+        <p class="about-text" data-sq="E vendosur mes kodrave gjelbëruese dhe pyjeve të lashta, Foleja e Shqiponjave lindi nga një ëndërr e thjeshtë: të krijojmë një vend ku bollëku i tokës takon artin e gatimit." data-mk="Сместено меѓу зелени ридови и древни шуми, Масата на Ридот се роди од едноставен сон: да се создаде место каде изобилството на земјата се среќава со уметноста на готвење." data-en="Perched among rolling hills and ancient forests, The Hillside Table was born from a simple dream: to create a place where the land's bounty meets the art of cooking.">
+          E vendosur mes kodrave gjelbëruese dhe pyjeve të lashta, Foleja e Shqiponjave lindi nga një ëndërr e thjeshtë: 
+          të krijojmë një vend ku bollëku i tokës takon artin e gatimit.
+        </p>
+        <p class="about-text" data-sq="Kuzhina jonë punon dorë për dore me fermerët lokalë, mbledhësit dhe artizanët për t'ju sjellë përbërës në freskinë maksimale. Çdo vakt është një festë e stinëve dhe terrenit të pasur të kodrave tona." data-mk="Нашата кујна работи рака под рака со локалните фармери, собирачи и занаетчии за да ви донесе состојки на нивниот врв на свежина. Секој оброк е прослава на сезоните и богатиот терен на нашите ридови." data-en="Our kitchen works hand-in-hand with local farmers, foragers, and artisans to bring you ingredients at their peak freshness. Every meal is a celebration of the seasons and the rich terroir of our hills.">
+          Kuzhina jonë punon dorë për dore me fermerët lokalë, mbledhësit dhe artizanët për t'ju sjellë përbërës 
+          në freskinë maksimale. Çdo vakt është një festë e stinëve dhe terrenit të pasur të kodrave tona.
+        </p>
+        <div class="about-features">
+          <div class="about-feature">
+            <svg class="about-feature-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            <span class="about-feature-text" data-sq="Produkte Lokale" data-mk="Локално Набавено" data-en="Locally Sourced">Produkte Lokale</span>
+          </div>
+          <div class="about-feature">
+            <svg class="about-feature-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            <span class="about-feature-text" data-sq="Meny Sezonale" data-mk="Сезонски Менија" data-en="Seasonal Menus">Meny Sezonale</span>
+          </div>
+          <div class="about-feature">
+            <svg class="about-feature-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            <span class="about-feature-text" data-sq="Produkte Organike" data-mk="Органски Производи" data-en="Organic Produce">Produkte Organike</span>
+          </div>
+          <div class="about-feature">
+            <svg class="about-feature-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            <span class="about-feature-text" data-sq="Pamje Mahnitëse" data-mk="Прекрасни Погледи" data-en="Scenic Views">Pamje Mahnitëse</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="section gallery" id="gallery">
+    <div class="section-header">
+      <p class="section-label" data-sq="Galeria" data-mk="Галерија" data-en="Gallery">Galeria</p>
+      <h2 class="section-title" data-sq="Momente në Tavolinën e Kodrës" data-mk="Моменти во Масата на Ридот" data-en="Moments at The Hillside Table">Momente në Tavolinën e Kodrës</h2>
+      <p class="section-description" data-sq="Nga pjatat tona të përgatitura me kujdes deri te ambienti i qetë i kodrave, zbuloni çfarë e bën çdo vizitë një përvojë të paharrueshme." data-mk="Од нашите внимателно подготвени јадења до мирната атмосфера на ридовите, откријте што го прави секое посета незаборавно искуство." data-en="From our carefully crafted dishes to the serene hillside setting, discover what makes every visit a memorable experience.">
+        Nga pjatat tona të përgatitura me kujdes deri te ambienti i qetë i kodrave, 
+        zbuloni çfarë e bën çdo vizitë një përvojë të paharrueshme.
+      </p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="https://i.imgur.com/xBVvOzK.jpeg" alt="Pjatë gourmet e servuar me elegancë">
+        <div class="gallery-item-overlay">
+          <p class="gallery-item-title" data-sq="Arti Kulinar" data-mk="Кулинарска Уметност" data-en="Culinary Artistry">Arti Kulinar</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://i.imgur.com/6e6UOX4.jpeg" alt="Darkë në teracë gjatë perëndimit">
+        <div class="gallery-item-overlay">
+          <p class="gallery-item-title" data-sq="Darkë në Teracë" data-mk="Вечера на Тераса" data-en="Terrace Dining">Darkë në Teracë</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://i.imgur.com/PIp6cNx.jpeg" alt="Përbërës të freskët lokalë">
+        <div class="gallery-item-overlay">
+          <p class="gallery-item-title" data-sq="Freskinë nga Ferma" data-mk="Свежо од Фарма" data-en="Farm Fresh">Freskinë nga Ferma</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section cta" id="reservations">
+    <div class="cta-content">
+      <h2 class="cta-title" data-sq="Gati për një Përvojë të Paharrueshme?" data-mk="Подготвени за Незаборавно Искуство?" data-en="Ready for an Unforgettable Experience?">Gati për një Përvojë të Paharrueshme?</h2>
+      <p class="cta-description" data-sq="Bashkohuni me ne për një mbrëmje me kuzhinë të jashtëzakonshme, mikpritje të ngrohtë dhe pamje mahnitëse të kodrave. Rezervoni tavolinën tuaj sot dhe na lejoni të krijojmë një përvojë darkimi të paharrueshme për ju." data-mk="Придружете ни се за вечер со исклучителна кујна, топло гостопримство и зачудувачки погледи на ридовите. Резервирајте ја вашата маса денес и дозволете ни да создадеме незаборавно искуство за вечера за вас." data-en="Join us for an evening of exceptional cuisine, warm hospitality, and stunning hillside views. Reserve your table today and let us create a memorable dining experience for you.">
+        Bashkohuni me ne për një mbrëmje me kuzhinë të jashtëzakonshme, mikpritje të ngrohtë dhe pamje mahnitëse të kodrave. 
+        Rezervoni tavolinën tuaj sot dhe na lejoni të krijojmë një përvojë darkimi të paharrueshme për ju.
+      </p>
+      <div class="cta-buttons">
+        <a href="menu.html" class="btn btn-primary" data-sq="Shikoni Menynë e Plotë" data-mk="Погледнете го Целото Мени" data-en="View Full Menu">Shikoni Menynë e Plotë</a>
+        <a href="tel:+38970123456" class="btn btn-outline" data-sq="Telefononi për Rezervim" data-mk="Јавете се за Резервација" data-en="Call to Reserve">Telefononi për Rezervim</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3 class="footer-logo">Foleja e Shqiponjave</h3>
+        <p class="footer-tagline" data-sq="Një strehë e kuzhinës lokale e vendosur në kodra, ku çdo vakt feston harmoninë e natyrës dhe artit kulinar." data-mk="Прибежиште на локална кујна сместено во ридовите, каде секој оброк ја слави хармонијата на природата и кулинарската уметност." data-en="A farm-to-table sanctuary nestled in the hills, where every meal celebrates the harmony of nature and culinary artistry.">
+          Një strehë e kuzhinës lokale e vendosur në kodra, ku çdo vakt 
+          feston harmoninë e natyrës dhe artit kulinar.
+        </p>
+        <div class="footer-social">
+          <a href="#" class="footer-social-link" aria-label="Instagram">
+            <svg fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+          </a>
+          <a href="#" class="footer-social-link" aria-label="Facebook">
+            <svg fill="currentColor" viewBox="0 0 24 24">
+              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+            </svg>
+          </a>
+          <a href="#" class="footer-social-link" aria-label="Twitter">
+            <svg fill="currentColor" viewBox="0 0 24 24">
+              <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-column">
+        <h4 class="footer-heading" data-sq="Navigoni" data-mk="Навигација" data-en="Navigate">Navigoni</h4>
+        <ul class="footer-links">
+          <li><a href="index.html" class="footer-link" data-sq="Ballina" data-mk="Почетна" data-en="Home">Ballina</a></li>
+          <li><a href="menu.html" class="footer-link" data-sq="Menyja" data-mk="Мени" data-en="Menu">Menyja</a></li>
+          <li><a href="#about" class="footer-link" data-sq="Rreth Nesh" data-mk="За Нас" data-en="About">Rreth Nesh</a></li>
+          <li><a href="#gallery" class="footer-link" data-sq="Galeria" data-mk="Галерија" data-en="Gallery">Galeria</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4 class="footer-heading" data-sq="Orari" data-mk="Работно Време" data-en="Hours">Orari</h4>
+        <ul class="footer-links">
+          <li><span class="footer-link" data-sq="Hën - Enj: 17:00 - 22:00" data-mk="Пон - Чет: 17:00 - 22:00" data-en="Mon - Thu: 5pm - 10pm">Hën - Enj: 17:00 - 22:00</span></li>
+          <li><span class="footer-link" data-sq="Pre - Sht: 17:00 - 23:00" data-mk="Пет - Саб: 17:00 - 23:00" data-en="Fri - Sat: 5pm - 11pm">Pre - Sht: 17:00 - 23:00</span></li>
+          <li><span class="footer-link" data-sq="E Diel: 16:00 - 21:00" data-mk="Недела: 16:00 - 21:00" data-en="Sunday: 4pm - 9pm">E Diel: 16:00 - 21:00</span></li>
+          <li><span class="footer-link" data-sq="Brunch: Sht-Diel 10:00 - 14:00" data-mk="Бранч: Саб-Нед 10:00 - 14:00" data-en="Brunch: Sat-Sun 10am - 2pm">Brunch: Sht-Diel 10:00 - 14:00</span></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4 class="footer-heading" data-sq="Vendndodhja" data-mk="Локација" data-en="Location">Vendndodhja</h4>
+        <ul class="footer-links">
+          <li><span class="footer-link">Rruga e Kodrave 123</span></li>
+          <li><span class="footer-link">Lugina e Gjelbër</span></li>
+          <li><span class="footer-link">Maqedoni e Veriut</span></li>
+          <li><a href="tel:+38970123456" class="footer-link">+389 70 123 456</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p data-sq="2026 Foleja e Shqiponjave. Të gjitha të drejtat e rezervuara." data-mk="2026 Масата на Ридот. Сите права задржани." data-en="2026 The Hillside Table. All rights reserved.">&copy; 2026 Foleja e Shqiponjave. Të gjitha të drejtat e rezervuara.</p>
+      <p data-sq="Krijuar me dashuri në kodra" data-mk="Создадено со љубов во ридовите" data-en="Crafted with love in the hills">Krijuar me dashuri në kodra</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const navMenu = document.getElementById('navMenu');
+      navMenu.classList.toggle('active');
+    }
+
+    // Close menu when clicking a link
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        document.getElementById('navMenu').classList.remove('active');
+      });
+    });
+
+    // Navbar background on scroll
+    window.addEventListener('scroll', () => {
+      const nav = document.querySelector('.nav');
+      if (window.scrollY > 50) {
+        nav.style.boxShadow = '0 2px 20px rgba(0,0,0,0.1)';
+      } else {
+        nav.style.boxShadow = 'none';
+      }
+    });
+
+    // Language Switcher
+    const langBtns = document.querySelectorAll('.lang-btn');
+    const translatableElements = document.querySelectorAll('[data-sq]');
+
+    langBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const lang = btn.dataset.lang;
+        
+        // Update active button
+        langBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        
+        // Update HTML lang attribute
+        document.documentElement.lang = lang === 'sq' ? 'sq' : lang === 'mk' ? 'mk' : 'en';
+        
+        // Translate all elements
+        translatableElements.forEach(el => {
+          const translation = el.dataset[lang];
+          if (translation) {
+            el.textContent = translation;
+          }
+        });
+
+        // Save preference
+        localStorage.setItem('preferredLanguage', lang);
+      });
+    });
+
+    // Load saved language preference
+    const savedLang = localStorage.getItem('preferredLanguage');
+    if (savedLang) {
+      const langBtn = document.querySelector(`[data-lang="${savedLang}"]`);
+      if (langBtn) langBtn.click();
+    }
+  </script>
+</body>
+</html>
