@@ -627,7 +627,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ===== Menu Page Styles ===== */
 .menu-hero {
-  padding-top: 120px;
+  padding-top: 160px;
   padding-bottom: 4rem;
   text-align: center;
   background-color: var(--color-warm-white);
