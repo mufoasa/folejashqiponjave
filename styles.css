@@ -627,11 +627,15 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ===== Menu Page Styles ===== */
 .menu-hero {
-  padding-top: 160px;
+  padding-top: 120px;
   padding-bottom: 4rem;
   text-align: center;
   background-color: var(--color-warm-white);
 }
+.section.menu-hero {
+  padding-top: 260px !important;
+}
+
 
 .menu-hero-title {
   font-size: clamp(2.5rem, 5vw, 4rem);
