@@ -633,7 +633,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: var(--color-warm-white);
 }
 .section.menu-hero {
-  padding-top: 260px !important;
+  padding-top: 100px !important;
 }
 
 
