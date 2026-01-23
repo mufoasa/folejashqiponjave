@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menyja | Foleja e Shqiponjave</title>
+  <meta name="description" content="Eksploroni menynë tonë sezonale me përbërës të buruar lokalisht dhe kuzhinë tradicionale në Tavolinën e Kodrës.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">Foleja e Shqiponjave</a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link" data-sq="Ballina" data-mk="Почетна" data-en="Home">Ballina</a></li>
+        <li><a href="menu.html" class="nav-link active" data-sq="Menyja" data-mk="Мени" data-en="Menu">Menyja</a></li>
+        <li><a href="index.html#about" class="nav-link" data-sq="Rreth Nesh" data-mk="За Нас" data-en="About">Rreth Nesh</a></li>
+        <li><a href="index.html#gallery" class="nav-link" data-sq="Galeria" data-mk="Галерија" data-en="Gallery">Galeria</a></li>
+        <li><a href="index.html#contact" class="nav-link" data-sq="Kontakti" data-mk="Контакт" data-en="Contact">Kontakti</a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="language-switcher">
+          <button class="lang-btn active" data-lang="sq">SQ</button>
+          <button class="lang-btn" data-lang="mk">MK</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+        <a href="index.html#reservations" class="nav-cta" data-sq="Rezervo Tavolinë" data-mk="Резервирај Маса" data-en="Book a Table">Rezervo Tavolinë</a>
+      </div>
+      <div class="nav-toggle" id="navToggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Menu Hero -->
+  <section class="section menu-hero">
+    <p class="section-label" data-sq="Përzgjedhje Sezonale" data-mk="Сезонски Избор" data-en="Seasonal Selections">Përzgjedhje Sezonale</p>
+    <h1 class="menu-hero-title" data-sq="Menyja Jonë" data-mk="Нашето Мени" data-en="Our Menu">Menyja Jonë</h1>
+    <p class="menu-hero-description" data-sq="Çdo pjatë është krijuar me përbërës të buruar lokalisht, duke festuar stinët dhe bollëkun e pasur të rajonit tonë kodrinor." data-mk="Секое јадење е изработено со локално набавени состојки, славејќи ги сезоните и богатото изобилство на нашиот ридски регион." data-en="Each dish is crafted with locally-sourced ingredients, celebrating the seasons and the rich bounty of our hillside region.">
+      Çdo pjatë është krijuar me përbërës të buruar lokalisht, duke festuar stinët 
+      dhe bollëkun e pasur të rajonit tonë kodrinor.
+    </p>
+  </section>
+
+  <!-- Menu Content -->
+  <section class="menu-section">
+    
+    <!-- Starters -->
+    <div class="menu-category">
+      <div class="menu-category-header">
+        <h2 class="menu-category-title" data-sq="Antipasta" data-mk="Предјадења" data-en="Starters">Antipasta</h2>
+        <div class="menu-category-line"></div>
+      </div>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <img src="https://joyfoodsunshine.com/wp-content/uploads/2022/04/tomato-bruschetta-recipe-1.jpg" alt="Brusketa me Domate" class="menu-item-image">
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <h3 class="menu-item-name" data-sq="Brusketa me Domate Trashëgimore" data-mk="Брускета со Наследни Домати" data-en="Heirloom Tomato Bruschetta">Brusketa me Domate Trashëgimore</h3>
+              <span class="menu-item-price">450 MKD</span>
+            </div>
+            <p class="menu-item-description" data-sq="Domate të freskëta nga kopshti, rikota e rrahur, reduktim balsamiku i vjetëruar dhe borzilok i freskët mbi bukë të pjekur." data-mk="Свежи домати од градината, матирана рикота, редукција од стар балсамски оцет и свеж босилек на печен леб." data-en="Garden-fresh heirloom tomatoes, whipped ricotta, aged balsamic reduction, and fresh basil on grilled sourdough.">
+              Domate të freskëta nga kopshti, rikota e rrahur, reduktim balsamiku i vjetëruar 
+              dhe borzilok i freskët mbi bukë të pjekur.
+            </p>
+            <div class="menu-item-tags">
+              <span class="menu-item-tag" data-sq="Vegjetarian" data-mk="Вегетаријански" data-en="Vegetarian">Vegjetarian</span>
+            </div>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="https://www.recipetineats.com/tachyon/2021/04/Mushroom-Soup-in-bowl-SQ.jpg" alt="Supë me Kërpudha" class="menu-item-image">
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <h3 class="menu-item-name" data-sq="Supë me Kërpudha të Egra" data-mk="Супа од Диви Печурки" data-en="Wild Mushroom Soup">Supë me Kërpudha të Egra</h3>
+              <span class="menu-item-price">380 MKD</span>
+            </div>
+            <p class="menu-item-description" data-sq="Kërpudha të egra të mbledhura, të ziera me krem majdanozi, të përfunduara me vaj tartufi dhe qepë të skuqura." data-mk="Берени диви печурки, динстани со крем од мајоран, завршени со масло од тартуфи и крцкав кромид." data-en="Foraged wild mushrooms simmered with thyme cream, finished with truffle oil and crispy shallots.">
+              Kërpudha të egra të mbledhura, të ziera me krem majdanozi, të përfunduara me vaj tartufi 
+              dhe qepë të skuqura.
+            </p>
+            <div class="menu-item-tags">
+              <span class="menu-item-tag" data-sq="Pa Gluten" data-mk="Без Глутен" data-en="Gluten-Free">Pa Gluten</span>
+            </div>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="https://healthyishappetite.com/wp-content/uploads/2025/07/stone-fruit-burrata-caprese.jpg" alt="Burrata & Fruta" class="menu-item-image">
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <h3 class="menu-item-name" data-sq="Burrata & Fruta Stinore" data-mk="Бурата и Сезонски Плодови" data-en="Burrata & Stone Fruit">Burrata & Fruta Stinore</h3>
+              <span class="menu-item-price">580 MKD</span>
+            </div>
+            <p class="menu-item-description" data-sq="Burrata kremoze me pjeshkë të pjekura, proshutë di Parma, rukola dhe vinegret me mjaltë e majdanoz." data-mk="Кремаста бурата со печени праски, пршута ди Парма, рукола и винегрет од мед и мајоран." data-en="Creamy burrata with grilled peaches, prosciutto di Parma, arugula, and honey-thyme vinaigrette.">
+              Burrata kremoze me pjeshkë të pjekura, proshutë di Parma, rukola 
+              dhe vinegret me mjaltë e majdanoz.
+            </p>
+            <div class="menu-item-tags">
+              <span class="menu-item-tag" data-sq="Zgjedhja e Kuzhinierit" data-mk="Избор на Готвачот" data-en="Chef's Pick">Zgjedhja e Kuzhinierit</span>
+            </div>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="https://getfish.com.au/cdn/shop/files/Step_3_-_Calamari_480x.png?v=1721972223" alt="Kalamari i Skuqur" class="menu-item-image">
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <h3 class="menu-item-name" data-sq="Kalamari i Skuqur" data-mk="Пржен Калмар" data-en="Crispy Calamari">Kalamari i Skuqur</h3>
+              <span class="menu-item-price">520 MKD</span>
+            </div>
+            <p class="menu-item-description" data-sq="Kalamari i pjekur lehtë me aioli limoni të djegur, speca turshi dhe barishte të freskëta." data-mk="Лесно панирани калмари со ајоли од печен лимон, туршија од пиперки и свежи зачини." data-en="Lightly battered calamari with charred lemon aioli, pickled peppers, and fresh herbs.">
+              Kalamari i pjekur lehtë me aioli limoni të djegur, speca turshi 
+              dhe barishte të freskëta.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mains -->
+    <div class="menu-category">
+      <div class="menu-category-header">
+        <h2 class="menu-category-title" data-sq="Pjatat Kryesore" data-mk="Главни Јадења" data-en="Mains">Pjatat Kryesore</h2>
+        <div class="menu-category-line"></div>
+      </div>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <img src="https://jesspryles.com/wp-content/uploads/2022/07/untitled-1.jpg" alt="Qengj me Barishte" class="menu-item-image">
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <h3 class="menu-item-name" data-sq="Qengj me Kore Barishte" data-mk="Јагнешко со Кора од Зачини" data-en="Herb-Crusted Lamb">Qengj me Kore Barishte</h3>
+              <span class="menu-item-price">1350 MKD</span>
+            </div>
+            <p class="menu-item-description" data-sq="Bringë qengji nga kullota me kore rozmarine, perime rrënjore të pjekura, pesto mente dhe salcë verë e kuqe." data-mk="Јагнешки ребра од пасиште со кора од рузмарин, печени коренести зеленчуци, песто од нане и сос од црвено вино." data-en="Grass-fed lamb rack with rosemary crust, roasted root vegetables, mint pesto, and red wine jus.">
+              Bringë qengji nga kullota me kore rozmarine, perime rrënjore të pjekura, 
+              pesto mente dhe salcë verë e kuqe.
+            </p>
+            <div class="menu-item-tags">
+              <span class="menu-item-tag" data-sq="Specialiteti" data-mk="Специјалитет" data-en="Signature">Specialiteti</span>
+            </div>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="https://thecozyapron.com/wp-content/uploads/2015/05/pan-seared-salmon_thecozyapron_05-15-15_1.jpg" alt="Salmon i Pjekur" class="menu-item-image">
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <h3 class="menu-item-name" data-sq="Salmon i Pjekur në Tigan" data-mk="Лосос Печен на Тиган" data-en="Pan-Seared Salmon">Salmon i Pjekur në Tigan</h3>
+              <span class="menu-item-price">1150 MKD</span>
+            </div>
+            <p class="menu-item-description" data-sq="Salmon i egër me lëkurë të skuqur, beurre blanc limoni, gjelbërime sezonale dhe patate të vogla." data-mk="Див лосос со крцкава кожа, бер блан од лимон, сезонска зеленина и мали компири." data-en="Wild-caught salmon with crispy skin, lemon beurre blanc, seasonal greens, and fingerling potatoes.">
+              Salmon i egër me lëkurë të skuqur, beurre blanc limoni, 
+              gjelbërime sezonale dhe patate të vogla.
+            </p>
+            <div class="menu-item-tags">
+              <span class="menu-item-tag" data-sq="Pa Gluten" data-mk="Без Глутен" data-en="Gluten-Free">Pa Gluten</span>
+            </div>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="https://www.psseasoning.com/cdn/shop/articles/IMG_2194_542241e8-4e5d-4102-8c00-9077e6e030d1.jpg?v=1766781884&width=2000" alt="Brinjë Vici të Ziera" class="menu-item-image">
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <h3 class="menu-item-name" data-sq="Brinjë Vici të Ziera Ngadalë" data-mk="Бавно Динстани Говедски Ребра" data-en="Braised Short Ribs">Brinjë Vici të Ziera Ngadalë</h3>
+              <span class="menu-item-price">1220 MKD</span>
+            </div>
+            <p class="menu-item-description" data-sq="Brinjë vici të ziera ngadalë me polenta kremoze, qepë të karamelizuara dhe gremolata." data-mk="Бавно динстани говедски ребра со кремаста полента, карамелизиран кромид и гремолата." data-en="Slow-braised beef short ribs with creamy polenta, caramelized onions, and gremolata.">
+              Brinjë vici të ziera ngadalë me polenta kremoze, 
+              qepë të karamelizuara dhe gremolata.
+            </p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="https://cdn11.bigcommerce.com/s-cjh14ahqln/product_images/uploaded_images/wild-mushroom-risotto.png" alt="Rizoto me Kërpudha" class="menu-item-image">
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <h3 class="menu-item-name" data-sq="Rizoto me Kërpudha Pylli" data-mk="Ризото со Шумски Печурки" data-en="Forest Mushroom Risotto">Rizoto me Kërpudha Pylli</h3>
+              <span class="menu-item-price">890 MKD</span>
+            </div>
+            <p class="menu-item-description" data-sq="Oriz Arborio me kërpudha të mbledhura, krem tartufi, parmezan i vjetëruar dhe qepë të freskëta." data-mk="Ориз Арборио со берени печурки, крем од тартуфи, стар пармезан и свеж кромид." data-en="Arborio rice with foraged mushrooms, truffle cream, aged parmesan, and fresh chives.">
+              Oriz Arborio me kërpudha të mbledhura, krem tartufi, 
+              parmezan i vjetëruar dhe qepë të freskëta.
+            </p>
+            <div class="menu-item-tags">
+              <span class="menu-item-tag" data-sq="Vegjetarian" data-mk="Вегетаријански" data-en="Vegetarian">Vegjetarian</span>
+            </div>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="https://justcook.butcherbox.com/wp-content/uploads/2019/11/Perfect-Pan-Seared-Ribeye-Steak.jpg" alt="Ribeye i Pjekur" class="menu-item-image">
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <h3 class="menu-item-name" data-sq="Ribeye i Pjekur në Skarë" data-mk="Рибаи на Скара" data-en="Grilled Ribeye">Ribeye i Pjekur në Skarë</h3>
+              <span class="menu-item-price">1680 MKD</span>
+            </div>
+            <p class="menu-item-description" data-sq="Ribeye premium 400g, gjalpë me barishte, palcë kocke e pjekur, brokolini i djegur dhe patate tartufi." data-mk="Премиум рибаи 400г, путер со зачини, печена коскена срж, печен броколини и компирчиња со тартуфи." data-en="Prime 14oz ribeye, herb compound butter, roasted bone marrow, charred broccolini, and truffle fries.">
+              Ribeye premium 400g, gjalpë me barishte, palcë kocke e pjekur, 
+              brokolini i djegur dhe patate tartufi.
+            </p>
+            <div class="menu-item-tags">
+              <span class="menu-item-tag" data-sq="Zgjedhja e Kuzhinierit" data-mk="Избор на Готвачот" data-en="Chef's Pick">Zgjedhja e Kuzhinierit</span>
+            </div>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="https://cookniche.com/Members/Images/photos/160330-091531-1PaulRobinson.jpeg" alt="Rosë Confit" class="menu-item-image">
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <h3 class="menu-item-name" data-sq="Rosë Confit" data-mk="Патка Конфи" data-en="Duck Confit">Rosë Confit</h3>
+              <span class="menu-item-price">1250 MKD</span>
+            </div>
+            <p class="menu-item-description" data-sq="Kofshë rose e skuqur me gastrik qershie, pure patate të ëmbël dhe gjelbërime të sauteuara." data-mk="Крцкав патешки бут со гастрик од цреши, пире од слатки компири и динстана зеленина." data-en="Crispy duck leg with cherry gastrique, whipped sweet potato, and sautéed greens.">
+              Kofshë rose e skuqur me gastrik qershie, pure patate të ëmbël 
+              dhe gjelbërime të sauteuara.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Desserts -->
+    <div class="menu-category">
+      <div class="menu-category-header">
+        <h2 class="menu-category-title" data-sq="Ëmbëlsirat" data-mk="Десерти" data-en="Desserts">Ëmbëlsirat</h2>
+        <div class="menu-category-line"></div>
+      </div>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <img src="https://images.getrecipekit.com/20250325120225-how-20to-20make-20chocolate-20molten-20lava-20cake-20in-20the-20microwave.png?width=650&quality=90&" alt="Tortë Çokollatë Lava" class="menu-item-image">
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <h3 class="menu-item-name" data-sq="Tortë Çokollatë me Llavë" data-mk="Чоколадна Лава Торта" data-en="Chocolate Lava Cake">Tortë Çokollatë me Llavë</h3>
+              <span class="menu-item-price">450 MKD</span>
+            </div>
+            <p class="menu-item-description" data-sq="Tortë çokollatë e ngrohtë e errët me qendër të shkrirë, akullore vanilje dhe coulis mjedre." data-mk="Топла торта од темно чоколадо со течен центар, сладолед од ванила и сос од малини." data-en="Warm dark chocolate cake with molten center, vanilla bean ice cream, and raspberry coulis.">
+              Tortë çokollatë e ngrohtë e errët me qendër të shkrirë, akullore vanilje 
+              dhe coulis mjedre.
+            </p>
+            <div class="menu-item-tags">
+              <span class="menu-item-tag" data-sq="Specialiteti" data-mk="Специјалитет" data-en="Signature">Specialiteti</span>
+            </div>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="https://img.provenceholidays.com/9681bcd3-efc2-452e-5d8d-23fae680a900/w=1920,fit=contain" alt="Crème Brûlée Lavandë" class="menu-item-image">
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <h3 class="menu-item-name" data-sq="Crème Brûlée me Lavandë" data-mk="Крем Брилеа со Лаванда" data-en="Lavender Crème Brûlée">Crème Brûlée me Lavandë</h3>
+              <span class="menu-item-price">380 MKD</span>
+            </div>
+            <p class="menu-item-description" data-sq="Krem francez klasik i infuzuar me lavandë lokale, me sheqer të karamelizuar dhe biskotë." data-mk="Класичен француски крем инфузиран со локална лаванда, со карамелизиран шеќер и бисквит." data-en="Classic French custard infused with local lavender, with caramelized sugar and shortbread.">
+              Krem francez klasik i infuzuar me lavandë lokale, 
+              me sheqer të karamelizuar dhe biskotë.
+            </p>
+            <div class="menu-item-tags">
+              <span class="menu-item-tag" data-sq="Pa Gluten" data-mk="Без Глутен" data-en="Gluten-Free">Pa Gluten</span>
+            </div>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="https://www.seriouseats.com/thmb/XDzPFaDUc15zYN9ttXGvrLci0ic=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/20240522-SEA-FruitTart-AmandaSuarez-05-011c6b8fb4d24b56b0b0a2f27e32804c.jpg" alt="Tartë me Fruta Sezonale" class="menu-item-image">
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <h3 class="menu-item-name" data-sq="Tartë me Fruta Sezonale" data-mk="Тарта со Сезонски Овошје" data-en="Seasonal Fruit Tart">Tartë me Fruta Sezonale</h3>
+              <span class="menu-item-price">350 MKD</span>
+            </div>
+            <p class="menu-item-description" data-sq="Brumë i butë me krem vanilje, fruta të freskëta sezonale dhe glazurë kajsie." data-mk="Путерест тест со крем од ванила, свежо сезонско овошје и глазура од кајсија." data-en="Buttery pastry with vanilla custard, fresh seasonal fruits, and apricot glaze.">
+              Brumë i butë me krem vanilje, fruta të freskëta sezonale 
+              dhe glazurë kajsie.
+            </p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="https://www.readyseteat.ca/sites/g/files/qyyrlu541/files/uploadedImages/img_9327_08208.jpg" alt="Pllakë Djathi Artizanale" class="menu-item-image">
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <h3 class="menu-item-name" data-sq="Pllakë Djathi Artizanale" data-mk="Артизанска Плоча со Сирење" data-en="Artisan Cheese Board">Pllakë Djathi Artizanale</h3>
+              <span class="menu-item-price">580 MKD</span>
+            </div>
+            <p class="menu-item-description" data-sq="Përzgjedhje djathërash lokalë dhe të importuara me mjaltë, fruta të thara dhe krakers shtëpie." data-mk="Избор на локални и увезени сирења со мед, суво овошје и домашни крекери." data-en="Selection of local and imported cheeses with honeycomb, dried fruits, and house crackers.">
+              Përzgjedhje djathërash lokalë dhe të importuara me mjaltë, 
+              fruta të thara dhe krakers shtëpie.
+            </p>
+            <div class="menu-item-tags">
+              <span class="menu-item-tag" data-sq="Vegjetarian" data-mk="Вегетаријански" data-en="Vegetarian">Vegjetarian</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Drinks -->
+    <div class="menu-category">
+      <div class="menu-category-header">
+        <h2 class="menu-category-title" data-sq="Pijet" data-mk="Пијалоци" data-en="Drinks">Pijet</h2>
+        <div class="menu-category-line"></div>
+      </div>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <img src="images/dish-drink.jpg" alt="Spritz Kopshti" class="menu-item-image">
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <h3 class="menu-item-name" data-sq="Spritz Kopshti" data-mk="Градинарски Шприц" data-en="Garden Spritz">Spritz Kopshti</h3>
+              <span class="menu-item-price">480 MKD</span>
+            </div>
+            <p class="menu-item-description" data-sq="Barishte të freskëta, liker elderflower, prosecco dhe ujë i gazuar me akordim agrumesh." data-mk="Свежи зачини, ликер од зова, просеко и газирана вода со цитрусен завршеток." data-en="Fresh herbs, elderflower liqueur, prosecco, and sparkling water with a citrus twist.">
+              Barishte të freskëta, liker elderflower, prosecco 
+              dhe ujë i gazuar me akordim agrumesh.
+            </p>
+            <div class="menu-item-tags">
+              <span class="menu-item-tag" data-sq="Specialitet Shtëpie" data-mk="Специјалитет на Куќата" data-en="House Special">Specialitet Shtëpie</span>
+            </div>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="images/dish-drink.jpg" alt="Old Fashioned Kodrinor" class="menu-item-image">
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <h3 class="menu-item-name" data-sq="Old Fashioned Kodrinor" data-mk="Ридски Олд Фешнд" data-en="Hillside Old Fashioned">Old Fashioned Kodrinor</h3>
+              <span class="menu-item-price">520 MKD</span>
+            </div>
+            <p class="menu-item-description" data-sq="Bourbon, bitter me shpenzë shtëpie, lëkurë portokalli dhe një prekje rozmarine të tymosur." data-mk="Бурбон, домашен битер со јавор, кора од портокал и навев на чаден рузмарин." data-en="Bourbon, house-made maple bitters, orange peel, and a hint of smoked rosemary.">
+              Bourbon, bitter me shpenzë shtëpie, lëkurë portokalli 
+              dhe një prekje rozmarine të tymosur.
+            </p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="images/dish-drink.jpg" alt="Limonadë me Lavandë" class="menu-item-image">
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <h3 class="menu-item-name" data-sq="Limonadë me Lavandë" data-mk="Лимонада со Лаванда" data-en="Lavender Lemonade">Limonadë me Lavandë</h3>
+              <span class="menu-item-price">250 MKD</span>
+            </div>
+            <p class="menu-item-description" data-sq="Limonadë e freskët e shtrydhur me dorë, e infuzuar me lavandë lokale dhe një prekje mjalte." data-mk="Свежо изцедена лимонада инфузирана со локална лаванда и навев на мед." data-en="Fresh-squeezed lemonade infused with local lavender and a touch of honey.">
+              Limonadë e freskët e shtrydhur me dorë, e infuzuar me lavandë lokale 
+              dhe një prekje mjalte.
+            </p>
+            <div class="menu-item-tags">
+              <span class="menu-item-tag" data-sq="Pa Alkool" data-mk="Безалкохолно" data-en="Non-Alcoholic">Pa Alkool</span>
+            </div>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="images/dish-drink.jpg" alt="Fluturim Verërash Sezonale" class="menu-item-image">
+          <div class="menu-item-content">
+            <div class="menu-item-header">
+              <h3 class="menu-item-name" data-sq="Fluturim Verërash Sezonale" data-mk="Сезонска Селекција Вина" data-en="Seasonal Wine Flight">Fluturim Verërash Sezonale</h3>
+              <span class="menu-item-price">780 MKD</span>
+            </div>
+            <p class="menu-item-description" data-sq="Katër doza të kuruara nga verëtari lokalë dhe rajonalë, të zgjedhura nga somelijeri ynë." data-mk="Четири избрани порции од локални и регионални винарии, избрани од нашиот сомелје." data-en="Four curated pours from local and regional vineyards, selected by our sommelier.">
+              Katër doza të kuruara nga verëtari lokalë dhe rajonalë, 
+              të zgjedhura nga somelijeri ynë.
+            </p>
+            <div class="menu-item-tags">
+              <span class="menu-item-tag" data-sq="Zgjedhja e Somelijerit" data-mk="Избор на Сомелјеот" data-en="Sommelier Pick">Zgjedhja e Somelijerit</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section cta">
+    <div class="cta-content">
+      <h2 class="cta-title" data-sq="Gati të Hani me Ne?" data-mk="Подготвени да Вечерате со Нас?" data-en="Ready to Dine With Us?">Gati të Hani me Ne?</h2>
+      <p class="cta-description" data-sq="Përjetoni menynë tonë sezonale personalisht. Rezervoni tavolinën tuaj sot dhe shijoni një mbrëmje të paharrueshme në kodra." data-mk="Доживејте го нашето сезонско мени лично. Резервирајте ја вашата маса денес и уживајте во незаборавна вечер во ридовите." data-en="Experience our seasonal menu in person. Reserve your table today and enjoy an unforgettable evening in the hills.">
+        Përjetoni menynë tonë sezonale personalisht. Rezervoni tavolinën tuaj sot 
+        dhe shijoni një mbrëmje të paharrueshme në kodra.
+      </p>
+      <div class="cta-buttons">
+        <a href="index.html#reservations" class="btn btn-primary" data-sq="Rezervoni Tavolinë" data-mk="Резервирајте Маса" data-en="Reserve a Table">Rezervoni Tavolinë</a>
+        <a href="tel:+38970123456" class="btn btn-outline" data-sq="Na Telefononi" data-mk="Јавете ни се" data-en="Call Us">Na Telefononi</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3 class="footer-logo">Foleja e Shqiponjave</h3>
+        <p class="footer-tagline" data-sq="Një strehë e kuzhinës lokale e vendosur në kodra, ku çdo vakt feston harmoninë e natyrës dhe artit kulinar." data-mk="Прибежиште на локална кујна сместено во ридовите, каде секој оброк ја слави хармонијата на природата и кулинарската уметност." data-en="A farm-to-table sanctuary nestled in the hills, where every meal celebrates the harmony of nature and culinary artistry.">
+          Një strehë e kuzhinës lokale e vendosur në kodra, ku çdo vakt 
+          feston harmoninë e natyrës dhe artit kulinar.
+        </p>
+        <div class="footer-social">
+          <a href="#" class="footer-social-link" aria-label="Instagram">
+            <svg fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+          </a>
+          <a href="#" class="footer-social-link" aria-label="Facebook">
+            <svg fill="currentColor" viewBox="0 0 24 24">
+              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+            </svg>
+          </a>
+          <a href="#" class="footer-social-link" aria-label="Twitter">
+            <svg fill="currentColor" viewBox="0 0 24 24">
+              <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-column">
+        <h4 class="footer-heading" data-sq="Navigoni" data-mk="Навигација" data-en="Navigate">Navigoni</h4>
+        <ul class="footer-links">
+          <li><a href="index.html" class="footer-link" data-sq="Ballina" data-mk="Почетна" data-en="Home">Ballina</a></li>
+          <li><a href="menu.html" class="footer-link" data-sq="Menyja" data-mk="Мени" data-en="Menu">Menyja</a></li>
+          <li><a href="index.html#about" class="footer-link" data-sq="Rreth Nesh" data-mk="За Нас" data-en="About">Rreth Nesh</a></li>
+          <li><a href="index.html#gallery" class="footer-link" data-sq="Galeria" data-mk="Галерија" data-en="Gallery">Galeria</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4 class="footer-heading" data-sq="Orari" data-mk="Работно Време" data-en="Hours">Orari</h4>
+        <ul class="footer-links">
+          <li><span class="footer-link" data-sq="Hën - Enj: 17:00 - 22:00" data-mk="Пон - Чет: 17:00 - 22:00" data-en="Mon - Thu: 5pm - 10pm">Hën - Enj: 17:00 - 22:00</span></li>
+          <li><span class="footer-link" data-sq="Pre - Sht: 17:00 - 23:00" data-mk="Пет - Саб: 17:00 - 23:00" data-en="Fri - Sat: 5pm - 11pm">Pre - Sht: 17:00 - 23:00</span></li>
+          <li><span class="footer-link" data-sq="E Diel: 16:00 - 21:00" data-mk="Недела: 16:00 - 21:00" data-en="Sunday: 4pm - 9pm">E Diel: 16:00 - 21:00</span></li>
+          <li><span class="footer-link" data-sq="Brunch: Sht-Diel 10:00 - 14:00" data-mk="Бранч: Саб-Нед 10:00 - 14:00" data-en="Brunch: Sat-Sun 10am - 2pm">Brunch: Sht-Diel 10:00 - 14:00</span></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4 class="footer-heading" data-sq="Vendndodhja" data-mk="Локација" data-en="Location">Vendndodhja</h4>
+        <ul class="footer-links">
+          <li><span class="footer-link">Rruga e Kodrave 123</span></li>
+          <li><span class="footer-link">Lugina e Gjelbër</span></li>
+          <li><span class="footer-link">Maqedoni e Veriut</span></li>
+          <li><a href="tel:+38970123456" class="footer-link">+389 70 123 456</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p data-sq="2026 Foleja e Shqiponjave. Të gjitha të drejtat e rezervuara." data-mk="2026 Масата на Ридот. Сите права задржани." data-en="2026 The Hillside Table. All rights reserved.">&copy; 2026 Foleja e Shqiponjave. Të gjitha të drejtat e rezervuara.</p>
+      <p data-sq="Krijuar me dashuri në kodra" data-mk="Создадено со љубов во ридовите" data-en="Crafted with love in the hills">Krijuar me dashuri në kodra</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const navMenu = document.getElementById('navMenu');
+      navMenu.classList.toggle('active');
+    }
+
+    // Close menu when clicking a link
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        document.getElementById('navMenu').classList.remove('active');
+      });
+    });
+
+    // Navbar background on scroll
+    window.addEventListener('scroll', () => {
+      const nav = document.querySelector('.nav');
+      if (window.scrollY > 50) {
+        nav.style.boxShadow = '0 2px 20px rgba(0,0,0,0.1)';
+      } else {
+        nav.style.boxShadow = 'none';
+      }
+    });
+
+    // Language Switcher
+    const langBtns = document.querySelectorAll('.lang-btn');
+    const translatableElements = document.querySelectorAll('[data-sq]');
+
+    langBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const lang = btn.dataset.lang;
+        
+        // Update active button
+        langBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        
+        // Update HTML lang attribute
+        document.documentElement.lang = lang === 'sq' ? 'sq' : lang === 'mk' ? 'mk' : 'en';
+        
+        // Translate all elements
+        translatableElements.forEach(el => {
+          const translation = el.dataset[lang];
+          if (translation) {
+            el.textContent = translation;
+          }
+        });
+
+        // Save preference
+        localStorage.setItem('preferredLanguage', lang);
+      });
+    });
+
+    // Load saved language preference
+    const savedLang = localStorage.getItem('preferredLanguage');
+    if (savedLang) {
+      const langBtn = document.querySelector(`[data-lang="${savedLang}"]`);
+      if (langBtn) langBtn.click();
+    }
+  </script>
+</body>
+</html>
