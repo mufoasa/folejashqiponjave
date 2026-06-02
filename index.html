@@ -1004,12 +1004,12 @@ window.addEventListener("load", () => {
       </div>
       <div class="gallery-grid reveal">
         <div class="gallery-item"><img src="https://i.imgur.com/D8FerNK.jpeg" alt="Interior"></div>
-        <div class="gallery-item"><img src="https://i.imgur.com/5ddFksU.jpeg" alt="Food"></div>
+        <div class="gallery-item"><img src="https://i.imgur.com/iP6kGbi.jpeg" alt="kendilojrave"></div>
         <div class="gallery-item"><img src="https://i.imgur.com/nJ8o1VS.jpeg" alt="Dish"></div>
-        <div class="gallery-item"><img src="https://i.imgur.com/TjR3pxZ.jpeg" alt="Interior"></div>
+        <div class="gallery-item"><img src="https://i.imgur.com/ziLXCux.jpeg" alt="Interior"></div>
         <div class="gallery-item"><img src="https://i.imgur.com/fdQaFzE.jpeg" alt="Terrace"></div>
         
-        <div class="gallery-item"><img src="https://i.imgur.com/088g8uZ.jpeg" alt="Dining"></div>
+        <div class="gallery-item"><img src="https://i.imgur.com/V0VBpfa.jpeg" alt="Dining"></div>
       </div>
       <div class="gallery-btn-wrap reveal"><a class="btn-gold" href="#" onclick="showPage('gallery'); return false;" data-i18n="gal_btn">View Full Gallery</a></div>
     </div>
@@ -1047,9 +1047,9 @@ window.addEventListener("load", () => {
         <div class="section-line center"></div>
       </div>
       <div class="info-grid" style="margin-top:3rem;">
-        <div class="info-card reveal reveal-delay-1"><div class="info-icon">🕐</div><h3 data-i18n="info_hours_h">Opening Hours</h3><p data-i18n="info_hours_p">Monday – Sunday<br><strong>10:00 – 00:00</strong><br>Thursday<br><strong>Closed</strong></p></div>
+        <div class="info-card reveal reveal-delay-1"><div class="info-icon">🕐</div><h3 data-i18n="info_hours_h">Opening Hours</h3><p data-i18n="info_hours_p">Monday – Sunday<br><strong>11:00 – 22:00</strong><br>Thursday<br><strong>Closed</strong></p></div>
         <div class="info-card reveal reveal-delay-2"><div class="info-icon">📍</div><h3 data-i18n="info_loc_h">Location</h3><p>Rr: Tetovë–Bozovcë<br>Bozovcë, 1224<br><span data-i18n="info_loc_near">Near Tetovo</span><br>North Macedonia</p></div>
-        <div class="info-card reveal reveal-delay-3"><div class="info-icon">📞</div><h3 data-i18n="info_res_h">Reservations</h3><p data-i18n="info_res_p">Call us at<br><strong>071 707 142</strong><br>or reserve online anytime</p><a href="#" onclick="openReservation(); return false;" style="display:inline-block;margin-top:1rem;font-size:0.72rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);font-weight:500;border-bottom:1px solid var(--border);" data-i18n="info_res_link">Book a table →</a></div>
+        <div class="info-card reveal reveal-delay-3"><div class="info-icon">📞</div><h3 data-i18n="info_res_h">Reservations</h3><p data-i18n="info_res_p">Call us at<br><strong>076 211 871</strong><br>or reserve online anytime</p><a href="#" onclick="openReservation(); return false;" style="display:inline-block;margin-top:1rem;font-size:0.72rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);font-weight:500;border-bottom:1px solid var(--border);" data-i18n="info_res_link">Book a table →</a></div>
       </div>
     </div>
   </section>
@@ -2064,6 +2064,11 @@ window.addEventListener("load", () => {
           <img src="https://i.imgur.com/msGHuxR.jpeg" alt="Restaurant view">
           <div class="gallery-overlay"><span data-i18n="gallery_view">View</span></div>
         </div>
+        
+        <div class="gallery-full-item" onclick="openLightbox(0)">
+          <img src="https://i.imgur.com/iP6kGbi.jpeg" alt="Restaurant view">
+          <div class="gallery-overlay"><span data-i18n="gallery_view">View</span></div>
+        </div>
 
         <div class="gallery-full-item" onclick="openLightbox(1)">
           <img src="https://i.imgur.com/OAaWSoU.jpeg" alt="Dining area">
@@ -2079,6 +2084,11 @@ window.addEventListener("load", () => {
           <img src="https://i.imgur.com/rTKVSUI.jpeg" alt="Mountain restaurant">
           <div class="gallery-overlay"><span data-i18n="gallery_view">View</span></div>
         </div>
+        
+        <div class="gallery-full-item" onclick="openLightbox(3)">
+          <img src="https://i.imgur.com/7WRvE1l.jpeg" alt="Mountain restaurant">
+          <div class="gallery-overlay"><span data-i18n="gallery_view">View</span></div>
+        </div>
 
         <div class="gallery-full-item" onclick="openLightbox(4)">
           <img src="https://i.imgur.com/FGDyhS2.jpeg" alt="Traditional food">
@@ -2092,6 +2102,11 @@ window.addEventListener("load", () => {
 
         <div class="gallery-full-item" onclick="openLightbox(6)">
           <img src="https://i.imgur.com/r4FlLqn.jpeg" alt="Restaurant terrace">
+          <div class="gallery-overlay"><span data-i18n="gallery_view">View</span></div>
+        </div>
+        
+        <div class="gallery-full-item" onclick="openLightbox(6)">
+          <img src="https://i.imgur.com/V0VBpfa.jpeg" alt="Restaurant terrace">
           <div class="gallery-overlay"><span data-i18n="gallery_view">View</span></div>
         </div>
 
@@ -2173,8 +2188,8 @@ window.addEventListener("load", () => {
           <div class="section-line"></div>
           <p style="color:var(--text-muted);font-size:0.9rem;line-height:1.8;font-weight:300;margin-bottom:2.5rem;" data-i18n="contact_sub">Whether you'd like to make a reservation, ask about our menu, or enquire about private events — our team is here to help.</p>
           <div class="contact-info-item"><strong data-i18n="contact_addr_h">Address</strong><p>Rr: Tetovë–Bozovcë<br>Bozovcë, 1224<br><span data-i18n="info_loc_near">Near Tetovo</span>, North Macedonia</p></div>
-          <div class="contact-info-item"><strong data-i18n="contact_phone_h">Phone</strong><p><a href="tel:+38971707142" style="color:var(--brown-light);">071 707 142</a></p></div>
-          <div class="contact-info-item"><strong data-i18n="contact_hours_h">Opening Hours</strong><p data-i18n="info_hours_p">Monday – Sunday: 10:00 – 00:00<br>Thursday: Closed</p></div>
+          <div class="contact-info-item"><strong data-i18n="contact_phone_h">Phone</strong><p><a href="tel:+38976211871" style="color:var(--brown-light);">076 211 871</a></p></div>
+          <div class="contact-info-item"><strong data-i18n="contact_hours_h">Opening Hours</strong><p data-i18n="info_hours_p">Monday – Sunday: 11:00 – 22:00<br>Thursday: Closed</p></div>
           <div class="contact-info-item"><strong data-i18n="contact_follow_h">Follow Us</strong><div class="social-links" style="margin-top:0.5rem;"><a href="#" class="social-link">f</a><a href="#" class="social-link">in</a><a href="#" class="social-link">ta</a></div></div>
         </div>
         <div>
@@ -2302,7 +2317,7 @@ window.addEventListener("load", () => {
         <div class="philosophy-card reveal reveal-delay-3"><div class="philosophy-icon"></div><h3 data-i18n="hotel_am3_h">Free Parking</h3><p data-i18n="hotel_am3_p">Secure, complimentary on-site parking for all hotel guests, available 24 hours.</p></div>
         <div class="philosophy-card reveal reveal-delay-4"><div class="philosophy-icon"></div><h3 data-i18n="hotel_am4_h">High-Speed Wi-Fi</h3><p data-i18n="hotel_am4_p">Fast, reliable Wi-Fi throughout the hotel — in rooms, the restaurant, and all common areas.</p></div>
         <div class="philosophy-card reveal reveal-delay-1"><div class="philosophy-icon"></div><h3 data-i18n="hotel_am5_h">Daily Housekeeping</h3><p data-i18n="hotel_am5_p">Your room is freshened daily with premium toiletries replenished every morning.</p></div>
-        <div class="philosophy-card reveal reveal-delay-2"><div class="philosophy-icon">️</div><h3 data-i18n="hotel_am6_h">In-Room Dining</h3><p data-i18n="hotel_am6_p">Order from our full restaurant menu to your room, available from 10:00 to 00:00.</p></div>
+        <div class="philosophy-card reveal reveal-delay-2"><div class="philosophy-icon">️</div><h3 data-i18n="hotel_am6_h">In-Room Dining</h3><p data-i18n="hotel_am6_p">Order from our full restaurant menu to your room, available from 11:00 to 22:00.</p></div>
         <div class="philosophy-card reveal reveal-delay-3"><div class="philosophy-icon"></div><h3 data-i18n="hotel_am7_h">24h Reception</h3><p data-i18n="hotel_am7_p">Our front desk team is available around the clock to assist with any request.</p></div>
         <div class="philosophy-card reveal reveal-delay-4"><div class="philosophy-icon">️</div><h3 data-i18n="hotel_am8_h">Excursion Desk</h3><p data-i18n="hotel_am8_p">We help arrange local tours, hikes, and excursions to explore the Tetovo region.</p></div>
       </div>
@@ -2318,7 +2333,7 @@ window.addEventListener("load", () => {
       <p style="color:rgba(255,255,255,0.7);font-size:1rem;margin-bottom:2.5rem;font-weight:300;" data-i18n="hotel_cta_sub">Contact us to check availability and reserve your room at Foleja e Shqiponjave.</p>
       <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
         <a class="btn-gold-fill" href="#" onclick="openRoomModal(); return false;" data-i18n="hotel_cta_btn">Book a Room</a>
-        <a class="btn-outline" href="tel:+38971707142" style="display:inline-block;padding:0.9rem 2.6rem;border:1px solid rgba(255,255,255,0.5);color:#fff;font-size:0.75rem;letter-spacing:0.18em;text-transform:uppercase;font-weight:500;transition:all 0.3s;font-family:'Jost',sans-serif;">071 707 142</a>
+        <a class="btn-outline" href="tel:+38976211871" style="display:inline-block;padding:0.9rem 2.6rem;border:1px solid rgba(255,255,255,0.5);color:#fff;font-size:0.75rem;letter-spacing:0.18em;text-transform:uppercase;font-weight:500;transition:all 0.3s;font-family:'Jost',sans-serif;">076 211 871</a>
       </div>
     </div>
   </section>
@@ -2344,12 +2359,12 @@ window.addEventListener("load", () => {
       </div>
       <div class="footer-col">
         <h4 data-i18n="info_hours_h">Opening Hours</h4>
-        <p style="color:rgba(255,255,255,0.55);font-size:0.83rem;font-weight:300;line-height:1.9;" data-i18n="footer_hours">Mon – Sun: 10:00 – 23:00<br>Thursday: Closed</p>
+        <p style="color:rgba(255,255,255,0.55);font-size:0.83rem;font-weight:300;line-height:1.9;" data-i18n="footer_hours">Mon – Sun: 11:00 – 23:00<br>Thursday: Closed</p>
       </div>
       <div class="footer-col">
         <h4 data-i18n="contact_label">Contact</h4>
         <div class="footer-contact-item"><strong data-i18n="contact_addr_h">Address</strong>Rr: Tetovë–Bozovcë, Bozovcë<br>1224, <span data-i18n="info_loc_near">Near Tetovo</span></div>
-        <div class="footer-contact-item"><strong data-i18n="contact_phone_h">Phone</strong><a href="tel:+38971707142" style="color:rgba(255,255,255,0.55);">071 707 142</a></div>
+        <div class="footer-contact-item"><strong data-i18n="contact_phone_h">Phone</strong><a href="tel:+38976211871" style="color:rgba(255,255,255,0.55);">076 211 871</a></div>
         <div style="margin-top:1.2rem;"><a class="btn-gold" href="#" onclick="openReservation(); return false;" style="font-size:0.68rem;padding:0.6rem 1.2rem;" data-i18n="nav_reserve">Reserve a Table</a></div>
       </div>
     </div>
@@ -2372,7 +2387,7 @@ window.addEventListener("load", () => {
     <span class="modal-close" onclick="closeRoomModal()">×</span>
     <p class="section-label" data-i18n="room_modal_label">Room Reservation</p>
     <h2 class="modal-title font-display" data-i18n="room_modal_title">Book a Room</h2>
-    <p class="modal-subtitle" data-i18n="room_modal_sub">Fill in the form or call <a href="tel:+38971707142" style="color:var(--gold);">071 707 142</a></p>
+    <p class="modal-subtitle" data-i18n="room_modal_sub">Fill in the form or call <a href="tel:+38976211871" style="color:var(--gold);">076 211 871</a></p>
     <div class="form-row">
       <div class="form-group"><label data-i18n="form_name">Full Name</label><input type="text" placeholder="Your name"></div>
       <div class="form-group"><label data-i18n="form_phone">Phone</label><input type="tel" placeholder="+389 ..."></div>
@@ -2407,7 +2422,7 @@ window.addEventListener("load", () => {
     <span class="modal-close" onclick="closeReservation()">×</span>
     <p class="section-label" data-i18n="modal_label">Table Booking</p>
     <h2 class="modal-title font-display" data-i18n="modal_title">Reserve Your Table</h2>
-    <p class="modal-subtitle" data-i18n="modal_sub">Fill in the form or call us on <a href="tel:+38971707142" style="color:var(--gold);">071 707 142</a></p>
+    <p class="modal-subtitle" data-i18n="modal_sub">Fill in the form or call us on <a href="tel:+38976211871" style="color:var(--gold);">076 211 871</a></p>
     <div class="form-row">
       <div class="form-group"><label data-i18n="form_name">Full Name</label><input type="text" data-i18n-ph="form_name_ph" placeholder="Your name"></div>
       <div class="form-group"><label data-i18n="form_phone">Phone</label><input type="tel" placeholder="+389 ..."></div>
@@ -2537,9 +2552,9 @@ m_tomato_pasta_desc: "Traditional pasta served with rich homemade tomato sauce a
     cta_sub: "Book your table today and experience the finest flavours of the Tradition, right here in Bozovcë.",
     cta_btn: "Reserve a Table",
     info_label: "Visit Us", info_title: "Opening <em>Hours</em> & Location",
-    info_hours_h: "Opening Hours", info_hours_p: "Monday – Sunday<br><strong>10:00 – 00:00</strong><br>Thursday<br><strong>Closed</strong>",
+    info_hours_h: "Opening Hours", info_hours_p: "Monday – Sunday<br><strong>11:00 – 22:00</strong><br>Thursday<br><strong>Closed</strong>",
     info_loc_h: "Location", info_loc_near: "Near Tetovo",
-    info_res_h: "Reservations", info_res_p: "Call us at<br><strong>071 707 142</strong><br>or reserve online anytime",
+    info_res_h: "Reservations", info_res_p: "Call us at<br><strong>076 211 871</strong><br>or reserve online anytime",
     info_res_link: "Book a table →",
     menu_page_title: "Our <em style=\"font-style:italic;color:var(--gold-light);\">Menu</em>",
     mcat_all: "All", mcat_starters: "Starters", mcat_seafood: "Traditional Food", mcat_pasta: "Pasta",
@@ -2605,7 +2620,7 @@ m_tomato_pasta_desc: "Traditional pasta served with rich homemade tomato sauce a
     modal_confirm: "Confirm Reservation",
     form_date: "Date", form_time: "Time", form_guests: "Number of Guests",
     form_special: "Special Requests", form_special_ph: "Allergies, celebrations, high chairs...",
-    footer_nav: "Navigation", footer_hours: "Mon – Sun: 10:00 – 00:00<br>Thur: Closed",
+    footer_nav: "Navigation", footer_hours: "Mon – Sun: 11:00 – 22:00<br>Thur: Closed",
     footer_rights: "All rights reserved.",
     reserve_confirmed: "✓ Reservation Confirmed!", msg_sent: "✓ Message Sent! We'll be in touch.",
     nav_hotel: "Hotel",
@@ -2630,7 +2645,7 @@ m_tomato_pasta_desc: "Traditional pasta served with rich homemade tomato sauce a
     hotel_am3_h: "Free Parking", hotel_am3_p: "Secure, complimentary on-site parking for all hotel guests, available 24 hours.",
     hotel_am4_h: "High-Speed Wi-Fi", hotel_am4_p: "Fast, reliable Wi-Fi throughout the hotel — in rooms, the restaurant, and all common areas.",
     hotel_am5_h: "Daily Housekeeping", hotel_am5_p: "Your room is freshened daily with premium toiletries replenished every morning.",
-    hotel_am6_h: "In-Room Dining", hotel_am6_p: "Order from our full restaurant menu to your room, available from 10:00 to 00:00.",
+    hotel_am6_h: "In-Room Dining", hotel_am6_p: "Order from our full restaurant menu to your room, available from 11:00 to 22:00.",
     hotel_am7_h: "24h Reception", hotel_am7_p: "Our front desk team is available around the clock to assist with any request.",
     hotel_am8_h: "Excursion Desk", hotel_am8_p: "We help arrange local tours, hikes, and excursions to explore the Tetovo region.",
     hotel_cta_label: "Book Your Stay", hotel_cta_title: "Your Mountain<br><em style=\"color:var(--gold-light);\">Retreat</em> Awaits",
@@ -2801,9 +2816,9 @@ m_tomato_pasta_desc: "Makarona tradicionale me salcë të pasur domatesh dhe er�
     cta_sub: "Rezervo tavolinën tënde sot dhe përjeto shijet më të mira të Tradicionit, këtu në Bozovcë.",
     cta_btn: "Rezervo Tavolinë",
     info_label: "Na Vizitoni", info_title: "Orari i <em>Hapjes</em> dhe Lokacioni",
-    info_hours_h: "Orari i Hapjes", info_hours_p: "E Hënë – E Diel<br><strong>10:00 – 00:00</strong><br>E Enjte<br><strong>Mbyllur</strong>",
+    info_hours_h: "Orari i Hapjes", info_hours_p: "E Hënë – E Diel<br><strong>11:00 – 22:00</strong><br>E Enjte<br><strong>Mbyllur</strong>",
     info_loc_h: "Lokacioni", info_loc_near: "Afër Tetovës",
-    info_res_h: "Rezervime", info_res_p: "Na telefononi në<br><strong>071 707 142</strong><br>ose rezervoni online",
+    info_res_h: "Rezervime", info_res_p: "Na telefononi në<br><strong>076 211 871</strong><br>ose rezervoni online",
     info_res_link: "Rezervo tavolinë →",
     menu_page_title: "Menuja <em style=\"font-style:italic;color:var(--gold-light);\">Jonë</em>",
     mcat_all: "Të Gjitha", mcat_starters: "Antipastet", mcat_seafood: "Ushqim Tradicional", mcat_pasta: "Pasta",
@@ -2869,12 +2884,12 @@ m_tomato_pasta_desc: "Makarona tradicionale me salcë të pasur domatesh dhe er�
     modal_confirm: "Konfirmo Rezervimin",
     form_date: "Data", form_time: "Ora", form_guests: "Numri i Mysafirëve",
     form_special: "Kërkesa Speciale", form_special_ph: "Alergji, festa, karrige fëmijësh...",
-    footer_nav: "Navigimi", footer_hours: "E Hënë – E Diel: 10:00 – 00:00<br>E Enj: Mbyllur",
+    footer_nav: "Navigimi", footer_hours: "E Hënë – E Diel: 11:00 – 22:00<br>E Enj: Mbyllur",
     footer_rights: "Të gjitha të drejtat e rezervuara.",
     reserve_confirmed: "✓ Rezervimi u Konfirmua!", msg_sent: "✓ Mesazhi u Dërgua! Do t'ju kontaktojmë.",
     nav_hotel: "Hotel",
     hotel_page_title: "Dhomat <em style=\"font-style:italic;color:var(--gold-light);\">Tona</em>",
-    hotel_intro_label: "Qëndroni Me Ne", hotel_intro_title: "Ku Rehati Takohet<br><em>Elegancën</em>",
+    hotel_intro_label: "Qëndroni Me Ne", hotel_intro_title: "Ku Rehatia Takohet<br><em>Elegancën</em>",
     hotel_intro_p1: "E vendosur mes bukurisë natyrore të luginës së Bozovcës, hoteli ynë butiket ofron një strehim të qetë vetëm minuta nga Tetova. Çdo dhomë është krijuar si një strehë private — e ngrohtë, elegante dhe rigjeneruese.",
     hotel_intro_p2: "Zgjohu me pamje të maleve, shijo një mëngjes të pasur nga kuzhina jonë dhe kalo mbrëmjet duke ngrënë nën yje. Në Folenë e Shqiponjave, çdo qëndrim është një përvojë.",
     hotel_stat_rooms: "Dhoma", hotel_stat_rated: "Yje", hotel_stat_service: "Shërbim",
@@ -2894,7 +2909,7 @@ m_tomato_pasta_desc: "Makarona tradicionale me salcë të pasur domatesh dhe er�
     hotel_am3_h: "Parkim Falas", hotel_am3_p: "Parkim i sigurt dhe falas në vend për të gjithë mysafirët e hotelit, i disponueshëm 24 orë.",
     hotel_am4_h: "Wi-Fi me Shpejtësi të Lartë", hotel_am4_p: "Wi-Fi i shpejtë dhe i besueshëm në të gjithë hotelin — në dhoma, restorant dhe zona të përbashkëta.",
     hotel_am5_h: "Pastrim Ditor", hotel_am5_p: "Dhoma juaj pastrohet çdo ditë me produkte toiletries premium të rimbushura çdo mëngjes.",
-    hotel_am6_h: "Shërbim në Dhomë", hotel_am6_p: "Porosisni nga menuja jonë e plotë e restorantit në dhomën tuaj, i disponueshëm nga 10:00 deri 00:00.",
+    hotel_am6_h: "Shërbim në Dhomë", hotel_am6_p: "Porosisni nga menuja jonë e plotë e restorantit në dhomën tuaj, i disponueshëm nga 11:00 deri 22:00.",
     hotel_am7_h: "Recepsion 24h", hotel_am7_p: "Ekipi ynë i frontit është i disponueshëm gjatë gjithë kohës për të ndihmuar me çdo kërkesë.",
     hotel_am8_h: "Agjencia e Ekskursioneve", hotel_am8_p: "Ne ndihmojmë të organizojmë turne, shëtitje dhe ekskursione lokale për të eksploruar rajonin e Tetovës.",
     hotel_cta_label: "Rezervoni Qëndrimin", hotel_cta_title: "Strehimi Juaj<br><em style=\"color:var(--gold-light);\">Malor</em> Ju Pret",
@@ -3065,9 +3080,9 @@ m_tomato_pasta_desc: "Традиционални тестенини со бог�
     cta_sub: "Резервирајте ја вашата маса денес и доживејте ги најдобрите вкусови на Медитеранот, токму тука во Теарце.",
     cta_btn: "Резервирај Маса",
     info_label: "Посетете Нè", info_title: "Работно <em>Време</em> и Локација",
-    info_hours_h: "Работно Време", info_hours_p: "Понеделник – Hедела<br><strong>10:00 – 00:00</strong><br>Четврток<br><strong>Затворен</strong>",
+    info_hours_h: "Работно Време", info_hours_p: "Понеделник – Hедела<br><strong>11:00 – 22:00</strong><br>Четврток<br><strong>Затворен</strong>",
     info_loc_h: "Локација", info_loc_near: "Во близина на Тетово",
-    info_res_h: "Резервации", info_res_p: "Јавете ни се на<br><strong>071 707 142</strong><br>или резервирајте онлајн",
+    info_res_h: "Резервации", info_res_p: "Јавете ни се на<br><strong>076 211 871</strong><br>или резервирајте онлајн",
     info_res_link: "Резервирај маса →",
     menu_page_title: "Нашето <em style=\"font-style:italic;color:var(--gold-light);\">Мени</em>",
     mcat_all: "Сите", mcat_starters: "Предјадења", mcat_seafood: "Tradicionalna Hrana", mcat_pasta: "Паста",
@@ -3133,7 +3148,7 @@ m_tomato_pasta_desc: "Традиционални тестенини со бог�
     modal_confirm: "Потврди Резервација",
     form_date: "Датум", form_time: "Час", form_guests: "Број на Гости",
     form_special: "Посебни Барања", form_special_ph: "Алергии, прослави, столчиња за деца...",
-    footer_nav: "Навигација", footer_hours: "Пон – Нед: 10:00 – 00:00<br>Чет: Затворен",
+    footer_nav: "Навигација", footer_hours: "Пон – Нед: 11:00 – 22:00<br>Чет: Затворен",
     footer_rights: "Сите права се задржани.",
     reserve_confirmed: "✓ Резервацијата е Потврдена!", msg_sent: "✓ Пораката е Испратена! Ќе ве контактираме.",
     nav_hotel: "Хотел",
@@ -3158,7 +3173,7 @@ m_tomato_pasta_desc: "Традиционални тестенини со бог�
     hotel_am3_h: "Бесплатен Паркинг", hotel_am3_p: "Безбеден, бесплатен паркинг за сите гости на хотелот, достапен 24 часа.",
     hotel_am4_h: "Брз Wi-Fi", hotel_am4_p: "Брз и сигурен Wi-Fi низ целиот хотел — во собите, ресторанот и сите заеднички простори.",
     hotel_am5_h: "Дневно Чистење", hotel_am5_p: "Вашата соба се освежува секој ден со премиум производи за лична хигиена.",
-    hotel_am6_h: "Услуга во Соба", hotel_am6_p: "Нарачајте од нашето целосно мени до вашата соба, достапно од 10:00 до 00:00.",
+    hotel_am6_h: "Услуга во Соба", hotel_am6_p: "Нарачајте од нашето целосно мени до вашата соба, достапно од 11:00 до 22:00.",
     hotel_am7_h: "Рецепција 24ч", hotel_am7_p: "Нашиот тим е достапен во секое доба за да помогне со секое барање.",
     hotel_am8_h: "Агенција за Екскурзии", hotel_am8_p: "Помагаме да организираме локални тури, планинарење и екскурзии за истражување на регионот Тетово.",
     hotel_cta_label: "Резервирај Престој", hotel_cta_title: "Вашето Планинско<br><em style=\"color:var(--gold-light);\">Засолниште</em> Чека",
@@ -3308,23 +3323,28 @@ function filterMenu(cat, btn) {
  
 const galleryImages = [
   'https://i.imgur.com/msGHuxR.jpeg',
+  'https://i.imgur.com/iP6kGbi.jpeg',
   'https://i.imgur.com/OAaWSoU.jpeg',
   'https://i.imgur.com/60th6hr.jpeg',
   'https://i.imgur.com/rTKVSUI.jpeg',
+  'https://i.imgur.com/ziLXCux.jpeg',
   'https://i.imgur.com/FGDyhS2.jpeg',
   'https://i.imgur.com/3FgUxJH.jpeg',
   'https://i.imgur.com/r4FlLqn.jpeg',
   'https://i.imgur.com/F6KKGKS.jpeg',
+  'https://i.imgur.com/V0VBpfa.jpeg',
   'https://i.imgur.com/QZuP600.jpeg',
   'https://i.imgur.com/jDFeaUb.jpeg',
   'https://i.imgur.com/aeX6Rzx.jpeg',
   'https://i.imgur.com/BWdN6D3.jpeg',
+  'https://i.imgur.com/7WRvE1l.jpeg',
   'https://i.imgur.com/FdwbRuj.jpeg',
   'https://i.imgur.com/WJ98OhP.jpeg',
   'https://i.imgur.com/jwO1mxA.jpeg',
   'https://i.imgur.com/1SwpUqB.jpeg',
   'https://i.imgur.com/D8FerNK.jpeg',
   'https://i.imgur.com/EA1COY1_d.webp?maxwidth=760&fidelity=grand',
+  
 ];
 let currentLbIdx = 0;
 function openLightbox(idx) {
